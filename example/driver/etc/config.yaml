@@ -1,0 +1,43 @@
+mq:
+  type: local
+  local:
+    logPublish: true
+    logConsume: true
+    showPayload: false
+  mqtt:
+    host: localhost
+    port: 1883
+  kafka:
+    brokers:
+      - localhost:9092
+
+serviceId: 64f847d563d1482d33753c25
+project: zq
+#serviceId: 649e73e5f21caca0dceb708d
+#project: 647d3f6db395ea47865d4b9e
+
+driver:
+  id: go-driver-mqtt-demo
+  name: 测试驱动
+
+log:
+  level: 5
+  format: json
+
+driverGrpc:
+  enable: false
+  host: localhost
+  port: 9224
+  healthRequestTime: 10s
+  waitTime: 5s
+
+http:
+  enable: true
+  host: 0.0.0.0
+  port: 8080
+
+dataFile:
+  enable: true
+  path: ./data.json
+
+license:

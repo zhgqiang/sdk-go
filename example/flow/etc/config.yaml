@@ -1,0 +1,10 @@
+flow:
+  name: goFlowTestNode
+  mode: service
+
+log:
+  level: 5
+
+flowEngine:
+  host: 127.0.0.1
+  port: 2333

@@ -1,0 +1,34 @@
+service:
+  id: test1
+  name: test
+
+log:
+  level: 5
+
+dataRelayGrpc:
+  host: 127.0.0.1
+  port: 9232
+  healthRequestTime: 10s
+  waitTime: 5s
+
+instanceId: testid
+project: zq
+
+etcdConfig: /config/dev.json
+etcd:
+  endpoints:
+    - 127.0.0.1:2379
+
+app:
+  api:
+    Metadata:
+      env: aliyun
+
+mq:
+  type: mqtt
+  mqtt:
+    host: 127.0.0.1
+    port: 1883
+  kafka:
+    brokers:
+      - localhost:9092

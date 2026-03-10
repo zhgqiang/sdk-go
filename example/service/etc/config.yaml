@@ -1,0 +1,4 @@
+log:
+  level: debug
+server:
+  port: 9000

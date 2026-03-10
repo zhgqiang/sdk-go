@@ -1,0 +1,10 @@
+extension:
+  id: go-flow-ext-demo
+  name: 测试go扩展节点服务
+
+log:
+  level: 5
+
+flowEngine:
+  host: 127.0.0.1
+  port: 2333
