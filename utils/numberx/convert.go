@@ -322,8 +322,10 @@ func BytesToFloat16(b []byte) (float32, error) {
 	frac := bits & 0x3FF
 
 	var f float32
+	var expVal int
 	if exp == 0 {
 		f = float32(frac) / 1024
+		expVal = -14
 	} else if exp == 31 {
 		if frac == 0 {
 			if sign == 1 {
@@ -334,14 +336,14 @@ func BytesToFloat16(b []byte) (float32, error) {
 		return float32(math.NaN()), nil
 	} else {
 		f = 1 + float32(frac)/1024
+		expVal = int(exp) - 15
 	}
 
 	if sign == 1 {
 		f = -f
 	}
 
-	exp -= 15
-	f *= float32(math.Pow(2, float64(exp)))
+	f *= float32(math.Pow(2, float64(expVal)))
 
 	return f, nil
 }

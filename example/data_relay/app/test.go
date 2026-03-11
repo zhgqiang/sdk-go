@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/zhgqiang/sdk-go/v4/data_relay"
+	"github.com/zhgqiang/sdk-go/data_relay"
 )
 
 type TestRelay struct {

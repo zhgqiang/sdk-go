@@ -11,7 +11,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
-	"github.com/zhgqiang/sdk-go/v4/utils/decrypt"
+	"github.com/zhgqiang/sdk-go/utils/decrypt"
 )
 
 type App interface {

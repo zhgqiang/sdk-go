@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	pb "github.com/zhgqiang/api-client-go/v4/driver"
+	pb "github.com/zhgqiang/api-client-go/driver"
 
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 // Driver 驱动接口，定义了驱动实现必须实现的方法

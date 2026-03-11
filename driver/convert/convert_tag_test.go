@@ -3,7 +3,7 @@ package convert
 import (
 	"github.com/shopspring/decimal"
 	"github.com/zhgqiang/json"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 	"testing"
 )
 

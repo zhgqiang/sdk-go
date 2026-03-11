@@ -13,12 +13,12 @@ import (
 
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	api_client_go "github.com/zhgqiang/api-client-go/v4"
+	api_client_go "github.com/zhgqiang/api-client-go"
 	"github.com/zhgqiang/json"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/conn/mq"
-	"github.com/zhgqiang/sdk-go/v4/etcd"
-	"github.com/zhgqiang/sdk-go/v4/utils/decrypt"
+	"github.com/zhgqiang/sdk-go/conn/mq"
+	"github.com/zhgqiang/sdk-go/etcd"
+	"github.com/zhgqiang/sdk-go/utils/decrypt"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

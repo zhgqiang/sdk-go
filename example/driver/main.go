@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/zhgqiang/sdk-go/v4/driver"
-	"github.com/zhgqiang/sdk-go/v4/example/driver/app"
+	"github.com/zhgqiang/sdk-go/driver"
+	"github.com/zhgqiang/sdk-go/example/driver/app"
 )
 
 func main() {

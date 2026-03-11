@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 
 	"github.com/zhgqiang/logger"
-	flowextionsion "github.com/zhgqiang/sdk-go/v4/flow_extension"
+	flowextionsion "github.com/zhgqiang/sdk-go/flow_extension"
 )
 
 // TestFlow 定义测试驱动结构体

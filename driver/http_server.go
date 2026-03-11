@@ -16,7 +16,7 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/zhgqiang/logger"
 
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 // initRouter 初始化 gin Router

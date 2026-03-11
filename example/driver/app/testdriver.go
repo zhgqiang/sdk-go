@@ -10,11 +10,11 @@ import (
 	"github.com/dop251/goja_nodejs/require"
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 	"github.com/gin-gonic/gin"
-	pb "github.com/zhgqiang/api-client-go/v4/driver"
+	pb "github.com/zhgqiang/api-client-go/driver"
 	"github.com/zhgqiang/json"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/driver"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
+	"github.com/zhgqiang/sdk-go/driver"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 // 驱动配置信息，不同的驱动生成不同的配置信息

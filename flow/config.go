@@ -3,9 +3,9 @@ package flow
 import (
 	"context"
 	"encoding/hex"
-	apiConfig "github.com/zhgqiang/api-client-go/v4/config"
+	apiConfig "github.com/zhgqiang/api-client-go/config"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/etcd"
+	"github.com/zhgqiang/sdk-go/etcd"
 	"google.golang.org/grpc/metadata"
 )
 

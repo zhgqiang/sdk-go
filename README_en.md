@@ -22,18 +22,18 @@ IOT SDK Go is the Go SDK for building IOT extension services, including Driver, 
 
 | Module | Package | Description |
 | --- | --- | --- |
-| Driver | `github.com/zhgqiang/sdk-go/v4/driver` | Device access, point/event/warning reporting, command handling |
-| Algorithm | `github.com/zhgqiang/sdk-go/v4/algorithm` | Algorithm service |
-| DataRelay | `github.com/zhgqiang/sdk-go/v4/data_relay` | Data relay and proxy |
-| Flow | `github.com/zhgqiang/sdk-go/v4/flow` | Flow node logic |
-| FlowExtension | `github.com/zhgqiang/sdk-go/v4/flow_extension` | Configurable flow extension |
-| Service | `github.com/zhgqiang/sdk-go/v4/service` | Gin HTTP service |
-| Task | `github.com/zhgqiang/sdk-go/v4/task` | Cron task runner |
+| Driver | `github.com/zhgqiang/sdk-go/driver` | Device access, point/event/warning reporting, command handling |
+| Algorithm | `github.com/zhgqiang/sdk-go/algorithm` | Algorithm service |
+| DataRelay | `github.com/zhgqiang/sdk-go/data_relay` | Data relay and proxy |
+| Flow | `github.com/zhgqiang/sdk-go/flow` | Flow node logic |
+| FlowExtension | `github.com/zhgqiang/sdk-go/flow_extension` | Configurable flow extension |
+| Service | `github.com/zhgqiang/sdk-go/service` | Gin HTTP service |
+| Task | `github.com/zhgqiang/sdk-go/task` | Cron task runner |
 
 ## Install
 
 ```bash
-go get github.com/zhgqiang/sdk-go/v4
+go get github.com/zhgqiang/sdk-go
 ```
 
 ## Quick Start
@@ -41,7 +41,7 @@ go get github.com/zhgqiang/sdk-go/v4
 ```go
 package main
 
-import "github.com/zhgqiang/sdk-go/v4/driver"
+import "github.com/zhgqiang/sdk-go/driver"
 
 func main() {
 	app := driver.NewApp()

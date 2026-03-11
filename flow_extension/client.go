@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/zhgqiang/api-client-go/v4/engine"
+	pb "github.com/zhgqiang/api-client-go/engine"
 	"github.com/zhgqiang/logger"
 )
 

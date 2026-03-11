@@ -11,7 +11,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/zhgqiang/api-client-go/v4/algorithm"
+	pb "github.com/zhgqiang/api-client-go/algorithm"
 	"github.com/zhgqiang/logger"
 )
 

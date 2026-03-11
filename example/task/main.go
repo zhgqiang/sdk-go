@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/robfig/cron/v3"
-	"github.com/zhgqiang/sdk-go/v4/task"
+	"github.com/zhgqiang/sdk-go/task"
 )
 
 // TestTask 定义测试任务结构体

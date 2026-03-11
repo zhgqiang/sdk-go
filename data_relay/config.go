@@ -1,11 +1,11 @@
 package data_relay
 
 import (
-	grpcConfig "github.com/zhgqiang/api-client-go/v4/config"
+	grpcConfig "github.com/zhgqiang/api-client-go/config"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/conn/mq"
-	"github.com/zhgqiang/sdk-go/v4/data_relay/grpc"
-	"github.com/zhgqiang/sdk-go/v4/etcd"
+	"github.com/zhgqiang/sdk-go/conn/mq"
+	"github.com/zhgqiang/sdk-go/data_relay/grpc"
+	"github.com/zhgqiang/sdk-go/etcd"
 )
 
 // Cfg 全局配置(需要先执行MustLoad，否则拿不到配置)

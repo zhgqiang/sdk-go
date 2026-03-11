@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/shopspring/decimal"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 func Value(tagTemp *entity.Tag, raw decimal.Decimal) (val decimal.Decimal) {

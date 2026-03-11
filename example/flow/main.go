@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/zhgqiang/sdk-go/v4/example/flow/app"
-	"github.com/zhgqiang/sdk-go/v4/flow"
+	"github.com/zhgqiang/sdk-go/example/flow/app"
+	"github.com/zhgqiang/sdk-go/flow"
 )
 
 func main() {

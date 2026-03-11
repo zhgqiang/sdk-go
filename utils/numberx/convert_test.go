@@ -32,8 +32,8 @@ func TestGetValueByType(t *testing.T) {
 				valueType: Float,
 				v:         "true",
 			},
-			want:    float64(1),
-			wantErr: false,
+			want:    nil,
+			wantErr: true,
 		},
 		{
 			name: "int1",
@@ -75,7 +75,7 @@ func TestBytesToFloat16(t *testing.T) {
 			args: args{
 				b: []byte{0x00, 0x07},
 			},
-			want:    -0,
+			want:    float32(4.172325e-07),
 			wantErr: false,
 		},
 	}

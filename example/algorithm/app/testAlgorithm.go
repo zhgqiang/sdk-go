@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/algorithm"
+	"github.com/zhgqiang/sdk-go/algorithm"
 	"math"
 	"strconv"
 )

@@ -22,18 +22,18 @@ IOT SDK Go 是用于开发 IOT 平台扩展服务的 Go SDK，覆盖 Driver、Al
 
 | 模块 | 包路径 | 说明 |
 | --- | --- | --- |
-| Driver | `github.com/zhgqiang/sdk-go/v4/driver` | 设备接入、点位/事件/告警上报、指令执行 |
-| Algorithm | `github.com/zhgqiang/sdk-go/v4/algorithm` | 算法服务 |
-| DataRelay | `github.com/zhgqiang/sdk-go/v4/data_relay` | 数据中继 |
-| Flow | `github.com/zhgqiang/sdk-go/v4/flow` | 流程节点 |
-| FlowExtension | `github.com/zhgqiang/sdk-go/v4/flow_extension` | 可配置流程扩展 |
-| Service | `github.com/zhgqiang/sdk-go/v4/service` | Gin HTTP 服务 |
-| Task | `github.com/zhgqiang/sdk-go/v4/task` | Cron 定时任务 |
+| Driver | `github.com/zhgqiang/sdk-go/driver` | 设备接入、点位/事件/告警上报、指令执行 |
+| Algorithm | `github.com/zhgqiang/sdk-go/algorithm` | 算法服务 |
+| DataRelay | `github.com/zhgqiang/sdk-go/data_relay` | 数据中继 |
+| Flow | `github.com/zhgqiang/sdk-go/flow` | 流程节点 |
+| FlowExtension | `github.com/zhgqiang/sdk-go/flow_extension` | 可配置流程扩展 |
+| Service | `github.com/zhgqiang/sdk-go/service` | Gin HTTP 服务 |
+| Task | `github.com/zhgqiang/sdk-go/task` | Cron 定时任务 |
 
 ## 安装
 
 ```bash
-go get github.com/zhgqiang/sdk-go/v4
+go get github.com/zhgqiang/sdk-go
 ```
 
 ## 快速开始
@@ -41,7 +41,7 @@ go get github.com/zhgqiang/sdk-go/v4
 ```go
 package main
 
-import "github.com/zhgqiang/sdk-go/v4/driver"
+import "github.com/zhgqiang/sdk-go/driver"
 
 func main() {
 	app := driver.NewApp()

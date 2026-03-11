@@ -2,9 +2,10 @@ package driver
 
 import (
 	"context"
-	"github.com/spf13/viper"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
 	"testing"
+
+	"github.com/spf13/viper"
+	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 func TestApp_WritePoints(t *testing.T) {
@@ -22,8 +23,8 @@ func TestApp_WritePoints(t *testing.T) {
 		ID: "b1",
 		Fields: []entity.Field{
 			{Tag: entity.Tag{
-				ID:       "p1",
-				Name:     "p1",
+				ID:   "p1",
+				Name: "p1",
 				TagValue: &entity.TagValue{
 					//MinValue: &minValue,
 					//MaxValue: &MaxValue,
@@ -63,8 +64,8 @@ func Test_wp(t *testing.T) {
 		ID: "b1",
 		Fields: []entity.Field{
 			{Tag: entity.Tag{
-				ID:       "p1",
-				Name:     "p1",
+				ID:   "p1",
+				Name: "p1",
 				TagValue: &entity.TagValue{
 					//MinValue: &minValue,
 					//MaxValue: &MaxValue,

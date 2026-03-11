@@ -8,20 +8,20 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zhgqiang/api-client-go/v4/apicontext"
-	"github.com/zhgqiang/api-client-go/v4/config"
+	"github.com/zhgqiang/api-client-go/apicontext"
+	"github.com/zhgqiang/api-client-go/config"
 	"github.com/zhgqiang/errors"
 	"github.com/zhgqiang/json"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
-	"github.com/zhgqiang/sdk-go/v4/utils/serial"
+	"github.com/zhgqiang/sdk-go/driver/entity"
+	"github.com/zhgqiang/sdk-go/utils/serial"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	api "github.com/zhgqiang/api-client-go/v4/api"
-	pb "github.com/zhgqiang/api-client-go/v4/driver"
+	api "github.com/zhgqiang/api-client-go/api"
+	pb "github.com/zhgqiang/api-client-go/driver"
 	"github.com/zhgqiang/logger"
-	dGrpc "github.com/zhgqiang/sdk-go/v4/driver/grpc"
+	dGrpc "github.com/zhgqiang/sdk-go/driver/grpc"
 )
 
 type Client struct {
@@ -304,7 +304,7 @@ func (c *Client) WriteEvent(ctx context.Context, event entity.Event) error {
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 	return nil
 }
@@ -324,7 +324,7 @@ func (c *Client) FindDevice(ctx context.Context, table, id string, ret interface
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 	if err := json.Unmarshal(res.GetResult(), ret); err != nil {
 		return fmt.Errorf("解析请求结果错误: %v", err)
@@ -347,7 +347,7 @@ func (c *Client) GetCommands(ctx context.Context, table, id string, result inter
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 	if err := json.Unmarshal(res.GetResult(), result); err != nil {
 		return fmt.Errorf("解析请求结果错误: %v", err)
@@ -372,7 +372,7 @@ func (c *Client) UpdateCommand(ctx context.Context, id string, data entity.Drive
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 
 	return nil
@@ -394,7 +394,7 @@ func (c *Client) RunLog(ctx context.Context, l entity.Log) error {
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 	return nil
 }
@@ -415,7 +415,7 @@ func (c *Client) UpdateTableData(ctx context.Context, l entity.TableData, result
 		return err
 	}
 	if !res.GetStatus() {
-		return fmt.Errorf(res.GetInfo())
+		return fmt.Errorf("%s", res.GetInfo())
 	}
 	if err := json.Unmarshal(res.GetResult(), result); err != nil {
 		return err

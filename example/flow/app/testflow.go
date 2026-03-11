@@ -3,7 +3,7 @@ package app
 import (
 	"context"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/flow"
+	"github.com/zhgqiang/sdk-go/flow"
 )
 
 // TestFlow 定义测试驱动结构体

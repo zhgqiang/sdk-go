@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	pb "github.com/zhgqiang/api-client-go/v4/engine"
+	pb "github.com/zhgqiang/api-client-go/engine"
 	"github.com/zhgqiang/errors"
 	"github.com/zhgqiang/json"
 	"github.com/zhgqiang/logger"

@@ -1,11 +1,11 @@
 package driver
 
 import (
-	apiConfig "github.com/zhgqiang/api-client-go/v4/config"
+	apiConfig "github.com/zhgqiang/api-client-go/config"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/conn/mq"
-	"github.com/zhgqiang/sdk-go/v4/driver/grpc"
-	"github.com/zhgqiang/sdk-go/v4/etcd"
+	"github.com/zhgqiang/sdk-go/conn/mq"
+	"github.com/zhgqiang/sdk-go/driver/grpc"
+	"github.com/zhgqiang/sdk-go/etcd"
 )
 
 // Cfg 全局配置(需要先执行MustLoad，否则拿不到配置)

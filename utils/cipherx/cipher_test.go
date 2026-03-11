@@ -10,7 +10,7 @@ import (
 )
 
 func TestCBC(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	t.Log("key", string(key))
 	data := []byte("dell123")
 
@@ -72,7 +72,7 @@ func TestSM4GCM(t *testing.T) {
 }
 
 func Test_Sm4gcm(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	//data := []byte{0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10}
 	str := "dell123"
 	data := []byte(str)
@@ -102,7 +102,7 @@ func Test_Sm4gcm(t *testing.T) {
 }
 
 func TestGCM(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	t.Log("key", string(key))
 	data := []byte("dell123")
 
@@ -135,7 +135,7 @@ func TestGCM(t *testing.T) {
 }
 
 func TestCTR(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	t.Log("key", string(key))
 	data := []byte("dell123")
 
@@ -168,7 +168,7 @@ func TestCTR(t *testing.T) {
 }
 
 func TestOFB(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	t.Log("key", string(key))
 	data := []byte("dell123")
 
@@ -201,7 +201,7 @@ func TestOFB(t *testing.T) {
 }
 
 func TestCFB(t *testing.T) {
-	key := []byte("iot1234567890")
+	key := []byte("iot1234567890abc")
 	t.Log("key", string(key))
 	data := []byte("dell123")
 

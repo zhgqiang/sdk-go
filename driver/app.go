@@ -23,14 +23,14 @@ import (
 	"github.com/spf13/viper"
 	"github.com/zhgqiang/json"
 	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/v4/driver/license"
+	"github.com/zhgqiang/sdk-go/driver/license"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 
-	"github.com/zhgqiang/sdk-go/v4/conn/mq"
-	"github.com/zhgqiang/sdk-go/v4/driver/convert"
-	"github.com/zhgqiang/sdk-go/v4/driver/entity"
-	"github.com/zhgqiang/sdk-go/v4/utils/decrypt"
-	"github.com/zhgqiang/sdk-go/v4/utils/numberx"
+	"github.com/zhgqiang/sdk-go/conn/mq"
+	"github.com/zhgqiang/sdk-go/driver/convert"
+	"github.com/zhgqiang/sdk-go/driver/entity"
+	"github.com/zhgqiang/sdk-go/utils/decrypt"
+	"github.com/zhgqiang/sdk-go/utils/numberx"
 )
 
 type App interface {
