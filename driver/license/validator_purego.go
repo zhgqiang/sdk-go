@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 
 	"github.com/ebitengine/purego"
@@ -38,7 +39,7 @@ func loadLibrary() error {
 	handle, err := purego.Dlopen(libPath, purego.RTLD_NOW|purego.RTLD_GLOBAL)
 	if err != nil {
 		libLoadErr = err
-		logger.Errorf("load driver license library failed: %v", err)
+		logger.Errorf("load driver license library failed: %v; %s", err, describeLibrarySearch(libPath))
 		return err
 	}
 
@@ -92,22 +93,92 @@ func loadLibrary() error {
 }
 
 func findLibrary() string {
-	for _, libName := range getLibNameFallbacks() {
-		searchPaths := []string{
-			libName,
-			filepath.Join("lib", libName),
-			filepath.Join("license", "lib", libName),
-			filepath.Join(filepath.Dir(os.Args[0]), libName),
-			filepath.Join(filepath.Dir(os.Args[0]), "lib", libName),
-			libName,
-		}
-		for _, path := range searchPaths {
-			if _, err := os.Stat(path); err == nil {
-				return path
+	for _, path := range librarySearchPaths() {
+		if _, err := os.Stat(path); err == nil {
+			if absPath, absErr := filepath.Abs(path); absErr == nil {
+				return absPath
 			}
+			return path
 		}
 	}
 	return getLibName()
+}
+
+func librarySearchPaths() []string {
+	paths := make([]string, 0, 10)
+	exeDir := executableDir()
+	for _, libName := range getLibNameFallbacks() {
+		paths = append(paths,
+			libName,
+			filepath.Join("lib", libName),
+			filepath.Join("gtsiot", "lib", "driver", libName),
+		)
+		if exeDir != "" {
+			paths = append(paths,
+				filepath.Join(exeDir, libName),
+				filepath.Join(exeDir, "lib", libName),
+				filepath.Join(exeDir, "gtsiot", "lib", "driver", libName),
+			)
+		}
+	}
+	return paths
+}
+
+func executableDir() string {
+	exePath, err := os.Executable()
+	if err != nil || exePath == "" {
+		return ""
+	}
+	if realPath, err := filepath.EvalSymlinks(exePath); err == nil && realPath != "" {
+		exePath = realPath
+	}
+	return filepath.Dir(exePath)
+}
+
+func describeLibrarySearch(selected string) string {
+	cwd, err := os.Getwd()
+	if err != nil {
+		cwd = fmt.Sprintf("getwd failed: %v", err)
+	}
+
+	exePath, err := os.Executable()
+	if err != nil {
+		exePath = fmt.Sprintf("executable failed: %v", err)
+	}
+
+	items := make([]string, 0, len(librarySearchPaths()))
+	for _, path := range librarySearchPaths() {
+		absPath := path
+		if abs, err := filepath.Abs(path); err == nil {
+			absPath = abs
+		}
+
+		status := "missing"
+		if info, err := os.Stat(path); err == nil {
+			if info.IsDir() {
+				status = "dir"
+			} else {
+				status = "exists"
+			}
+		} else if !os.IsNotExist(err) {
+			status = err.Error()
+		}
+		items = append(items, fmt.Sprintf("%s[%s]", absPath, status))
+	}
+
+	selectedAbs := selected
+	if abs, err := filepath.Abs(selected); err == nil {
+		selectedAbs = abs
+	}
+
+	return fmt.Sprintf("license search selected=%s cwd=%s exe=%s argv0=%s libname=%s tried=%s",
+		selectedAbs,
+		cwd,
+		exePath,
+		os.Args[0],
+		getLibName(),
+		strings.Join(items, "; "),
+	)
 }
 
 func GetMachineCodeFromLib() (string, error) {

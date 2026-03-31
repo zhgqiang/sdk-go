@@ -23,8 +23,8 @@ func TestApp_WritePoints(t *testing.T) {
 		ID: "b1",
 		Fields: []entity.Field{
 			{Tag: entity.Tag{
-				ID:   "p1",
-				Name: "p1",
+				ID:       "p1",
+				Name:     "p1",
 				TagValue: &entity.TagValue{
 					//MinValue: &minValue,
 					//MaxValue: &MaxValue,
@@ -64,8 +64,8 @@ func Test_wp(t *testing.T) {
 		ID: "b1",
 		Fields: []entity.Field{
 			{Tag: entity.Tag{
-				ID:   "p1",
-				Name: "p1",
+				ID:       "p1",
+				Name:     "p1",
 				TagValue: &entity.TagValue{
 					//MinValue: &minValue,
 					//MaxValue: &MaxValue,
