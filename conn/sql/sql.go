@@ -3,8 +3,8 @@ package sql
 import (
 	"fmt"
 
+	"github.com/felix-186/logger"
 	"github.com/jmoiron/sqlx"
-	"github.com/zhgqiang/logger"
 )
 
 type DBConn struct {

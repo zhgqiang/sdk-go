@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/felix-186/logger"
 	"github.com/gin-gonic/gin"
-	"github.com/zhgqiang/logger"
 )
 
 // recoveryMiddleware 恢复中间件，捕获 panic 并记录日志

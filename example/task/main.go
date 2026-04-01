@@ -13,8 +13,8 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/felix-186/sdk-go/task"
 	"github.com/robfig/cron/v3"
-	"github.com/zhgqiang/sdk-go/task"
 )
 
 // TestTask 定义测试任务结构体

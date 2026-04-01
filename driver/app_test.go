@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/felix-186/sdk-go/driver/entity"
 	"github.com/spf13/viper"
-	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 func TestApp_WritePoints(t *testing.T) {

@@ -8,14 +8,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zhgqiang/errors"
-	"github.com/zhgqiang/json"
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/errors"
+	"github.com/felix-186/json"
+	"github.com/felix-186/logger"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/zhgqiang/api-client-go/datarelay"
-	dGrpc "github.com/zhgqiang/sdk-go/data_relay/grpc"
+	pb "github.com/felix-186/api-client-go/datarelay"
+	dGrpc "github.com/felix-186/sdk-go/data_relay/grpc"
 )
 
 type Client struct {

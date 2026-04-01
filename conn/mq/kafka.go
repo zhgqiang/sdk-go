@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/logger"
 )
 
 var _ MQ = new(kafka)

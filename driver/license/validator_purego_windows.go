@@ -10,8 +10,8 @@ import (
 	"syscall"
 
 	"github.com/ebitengine/purego"
-	"github.com/zhgqiang/errors"
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/errors"
+	"github.com/felix-186/logger"
 )
 
 var (

@@ -12,7 +12,7 @@ import (
 
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/logger"
 )
 
 type mqtt struct {

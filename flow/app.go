@@ -12,11 +12,11 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/felix-186/logger"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"github.com/zhgqiang/logger"
 
-	"github.com/zhgqiang/sdk-go/utils/decrypt"
+	"github.com/felix-186/sdk-go/utils/decrypt"
 )
 
 type App interface {

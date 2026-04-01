@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zhgqiang/errors"
-	"github.com/zhgqiang/json"
+	"github.com/felix-186/errors"
+	"github.com/felix-186/json"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/zhgqiang/api-client-go/algorithm"
-	"github.com/zhgqiang/logger"
+	pb "github.com/felix-186/api-client-go/algorithm"
+	"github.com/felix-186/logger"
 )
 
 type Client struct {

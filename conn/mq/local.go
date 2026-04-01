@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/logger"
 )
 
 // Local 本地 MQ 实现，用于没有 MQ server 时驱动的开发和测试

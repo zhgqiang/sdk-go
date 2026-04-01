@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	pb "github.com/zhgqiang/api-client-go/engine"
-	"github.com/zhgqiang/errors"
-	"github.com/zhgqiang/json"
-	"github.com/zhgqiang/logger"
+	pb "github.com/felix-186/api-client-go/engine"
+	"github.com/felix-186/errors"
+	"github.com/felix-186/json"
+	"github.com/felix-186/logger"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

@@ -8,7 +8,7 @@ import (
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"google.golang.org/grpc"
 
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/logger"
 )
 
 type Config struct {

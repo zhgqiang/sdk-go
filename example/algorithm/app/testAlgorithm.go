@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/algorithm"
 	"math"
 	"strconv"
+
+	"github.com/felix-186/logger"
+	"github.com/felix-186/sdk-go/algorithm"
 )
 
 var _ algorithm.Service = &TestAlgorithm{}

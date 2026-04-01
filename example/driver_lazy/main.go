@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/zhgqiang/sdk-go/driver"
-	"github.com/zhgqiang/sdk-go/example/driver_lazy/app"
+	"github.com/felix-186/sdk-go/driver"
+	"github.com/felix-186/sdk-go/example/driver_lazy/app"
 )
 
 func main() {

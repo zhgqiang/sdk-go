@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/felix-186/logger"
 	cfg "github.com/go-kratos/kratos/contrib/config/etcd/v2"
 	"github.com/go-kratos/kratos/v2/config"
 	"github.com/spf13/viper"
-	"github.com/zhgqiang/logger"
 )
 
 func ScanEtcd(etcdKey string, etcdCfg Config, conf interface{}) error {

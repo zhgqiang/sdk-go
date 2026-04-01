@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	"github.com/rabbitmq/amqp091-go"
-	"github.com/zhgqiang/logger"
 )
 
 type Amqp struct {

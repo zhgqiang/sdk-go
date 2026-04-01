@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 
-	"github.com/zhgqiang/sdk-go/example/flow_extension/app"
-	flowextionsion "github.com/zhgqiang/sdk-go/flow_extension"
+	"github.com/felix-186/sdk-go/example/flow_extension/app"
+	flowextionsion "github.com/felix-186/sdk-go/flow_extension"
 )
 
 func main() {

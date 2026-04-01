@@ -8,8 +8,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/zhgqiang/errors"
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/errors"
+	"github.com/felix-186/logger"
 )
 
 var (

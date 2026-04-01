@@ -3,8 +3,8 @@ package websocket
 import (
 	"errors"
 
+	"github.com/felix-186/logger"
 	"github.com/gorilla/websocket"
-	"github.com/zhgqiang/logger"
 )
 
 type Conn struct {

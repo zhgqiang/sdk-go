@@ -1,4 +1,4 @@
-module github.com/zhgqiang/sdk-go
+module github.com/felix-186/sdk-go
 
 go 1.25.0
 
@@ -9,6 +9,10 @@ require (
 	github.com/duke-git/lancet/v2 v2.3.7
 	github.com/ebitengine/purego v0.10.0
 	github.com/eclipse/paho.mqtt.golang v1.5.1
+	github.com/felix-186/api-client-go v0.1.3
+	github.com/felix-186/errors v0.1.1
+	github.com/felix-186/json v0.1.3
+	github.com/felix-186/logger v0.1.3
 	github.com/fsnotify/fsnotify v1.9.0
 	github.com/gin-contrib/pprof v1.5.3
 	github.com/gin-gonic/gin v1.10.0
@@ -24,10 +28,6 @@ require (
 	github.com/spf13/pflag v1.0.10
 	github.com/spf13/viper v1.21.0
 	github.com/tjfoc/gmsm v1.4.1
-	github.com/zhgqiang/api-client-go v0.1.1
-	github.com/zhgqiang/errors v0.1.0
-	github.com/zhgqiang/json v0.1.2
-	github.com/zhgqiang/logger v0.1.2
 	go.bug.st/serial v1.6.4
 	go.etcd.io/etcd/client/v3 v3.6.8
 	go.mongodb.org/mongo-driver v1.17.9
@@ -44,7 +44,7 @@ require (
 	github.com/coreos/go-systemd/v22 v22.5.0 // indirect
 	github.com/creack/goselect v0.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/dlclark/regexp2 v1.11.4 // indirect
+	github.com/dlclark/regexp2 v1.11.5 // indirect
 	github.com/eapache/go-resiliency v1.7.0 // indirect
 	github.com/eapache/queue v1.1.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.8 // indirect
@@ -62,7 +62,7 @@ require (
 	github.com/goccy/go-json v0.10.5 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
-	github.com/google/pprof v0.0.0-20240727154555-813a5fbdbec8 // indirect
+	github.com/google/pprof v0.0.0-20260302011040-a15ffb7f9dcc // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.26.3 // indirect
 	github.com/hashicorp/go-uuid v1.0.3 // indirect
@@ -115,5 +115,3 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-//replace github.com/zhgqiang/api-client-go => ../../api-client-go

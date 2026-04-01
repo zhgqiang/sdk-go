@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/felix-186/sdk-go/driver/entity"
 	"github.com/shopspring/decimal"
-	"github.com/zhgqiang/sdk-go/driver/entity"
 )
 
 func Value(tagTemp *entity.Tag, raw decimal.Decimal) (val decimal.Decimal) {

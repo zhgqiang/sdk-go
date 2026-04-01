@@ -9,9 +9,9 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/felix-186/sdk-go/utils/decrypt"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
-	"github.com/zhgqiang/sdk-go/utils/decrypt"
 )
 
 type App interface {

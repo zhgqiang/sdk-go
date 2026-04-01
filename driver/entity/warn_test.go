@@ -1,8 +1,9 @@
 package entity
 
 import (
-	"github.com/zhgqiang/json"
 	"testing"
+
+	"github.com/felix-186/json"
 )
 
 func Test_warn(t *testing.T) {

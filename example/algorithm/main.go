@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/zhgqiang/sdk-go/algorithm"
-	"github.com/zhgqiang/sdk-go/example/algorithm/app"
+	"github.com/felix-186/sdk-go/algorithm"
+	"github.com/felix-186/sdk-go/example/algorithm/app"
 )
 
 func main() {

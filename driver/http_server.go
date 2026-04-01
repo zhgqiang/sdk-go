@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/felix-186/logger"
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
-	"github.com/zhgqiang/logger"
 
-	"github.com/zhgqiang/sdk-go/driver/entity"
+	"github.com/felix-186/sdk-go/driver/entity"
 )
 
 // initRouter 初始化 gin Router

@@ -11,14 +11,14 @@ import (
 	"runtime"
 	"syscall"
 
+	api_client_go "github.com/felix-186/api-client-go"
+	"github.com/felix-186/json"
+	"github.com/felix-186/logger"
+	"github.com/felix-186/sdk-go/conn/mq"
+	"github.com/felix-186/sdk-go/etcd"
+	"github.com/felix-186/sdk-go/utils/decrypt"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	api_client_go "github.com/zhgqiang/api-client-go"
-	"github.com/zhgqiang/json"
-	"github.com/zhgqiang/logger"
-	"github.com/zhgqiang/sdk-go/conn/mq"
-	"github.com/zhgqiang/sdk-go/etcd"
-	"github.com/zhgqiang/sdk-go/utils/decrypt"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

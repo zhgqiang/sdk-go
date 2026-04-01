@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/zhgqiang/logger"
+	"github.com/felix-186/logger"
 )
 
 type ErrorType int

@@ -6,9 +6,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/felix-186/logger"
 	"github.com/rabbitmq/amqp091-go"
-
-	"github.com/zhgqiang/logger"
 )
 
 type rabbit struct {
